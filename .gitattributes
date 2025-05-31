@@ -10,3 +10,10 @@ build/** linguist-vendored
 # Prioritize Dart for language detection
 *.dart linguist-detectable
 lib/** linguist-detectable
+
+# Ignore CMake files
+**/CMakeLists.txt linguist-generated
+*.cmake linguist-generated
+
+# Make sure Dart files are counted
+*.dart linguist-detectable
